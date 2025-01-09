@@ -208,9 +208,7 @@ class MainActivity : AppCompatActivity() {
 
                     is VideoRecordEvent.Finalize -> {
                         if (!recordEvent.hasError()) {
-                            val message =
-                                "Video Capture Succeeded: " + "${recordEvent.outputResults.outputUri}"
-                            Log.d(TAG, message)
+                            Log.d(TAG, "Video Capture Succeeded: " + "${recordEvent.outputResults.outputUri}")
                         } else {
                             recording?.close()
                             recording = null

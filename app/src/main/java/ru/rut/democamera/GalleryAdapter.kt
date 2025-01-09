@@ -38,10 +38,12 @@ class GalleryAdapter(
 
                     if (videoProportion > containerProportion) {
                         binding.videoView.layoutParams.height = containerHeight
-                        binding.videoView.layoutParams.width = (containerHeight * videoProportion).toInt()
+                        binding.videoView.layoutParams.width =
+                            (containerHeight * videoProportion).toInt()
                     } else {
                         binding.videoView.layoutParams.width = containerWidth
-                        binding.videoView.layoutParams.height = (containerWidth / videoProportion).toInt()
+                        binding.videoView.layoutParams.height =
+                            (containerWidth / videoProportion).toInt()
                     }
                     val mediaController = MediaController(binding.videoView.context)
                     val controllerContainer = binding.mediaControllerContainer
@@ -64,10 +66,12 @@ class GalleryAdapter(
 
                     if (videoProportion > containerProportion) {
                         binding.videoView.layoutParams.height = containerHeight
-                        binding.videoView.layoutParams.width = (containerHeight * videoProportion).toInt()
+                        binding.videoView.layoutParams.width =
+                            (containerHeight * videoProportion).toInt()
                     } else {
                         binding.videoView.layoutParams.width = containerWidth
-                        binding.videoView.layoutParams.height = (containerWidth / videoProportion).toInt()
+                        binding.videoView.layoutParams.height =
+                            (containerWidth / videoProportion).toInt()
                     }
 
                     binding.videoView.requestLayout()
