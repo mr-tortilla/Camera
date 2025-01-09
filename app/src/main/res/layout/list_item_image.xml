@@ -1,0 +1,25 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_margin="2dp"
+    >
+
+    <ImageView
+        android:id="@+id/local_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/video_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/baseline_arrow_right_24"
+        android:visibility="gone"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
